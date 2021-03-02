@@ -10,6 +10,7 @@ import org.launchcode.javawebdevtechjobsmvc.models.JobData;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.jar.Attributes;
 
 /**
  * Created by LaunchCode
@@ -28,6 +29,7 @@ public class ListController {
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
 
+        tableChoices.put("all", "All Jobs");
         tableChoices.put("employer", JobData.getAllEmployers());
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
