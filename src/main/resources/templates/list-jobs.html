@@ -14,31 +14,29 @@
     <block th:fragment = "printJobList" th:each = "job : ${jobs}">
         <table class="job-listing">
             <tr>
-                <td>ID</td>
+                <td>ID: </td>
                 <td th:text = "${job.getId()}"/>
             </tr>
             <tr>
-                <td>Name</td>
+                <td>Name: </td>
                 <td th:text = "${job.getName()}"/>
             </tr>
             <tr>
-                <td>Employer</td>
+                <td>Employer: </td>
                 <td th:text ="${job.getEmployer()}"/>
             </tr>
             <tr>
-                <td>Location</td>
+                <td>Location: </td>
                 <td th:text ="${job.getLocation()}"/>
             </tr>
             <tr>
-                <td>Position</td>
+                <td>Position: </td>
                 <td th:text="${job.getPositionType()}"/>
             </tr>
-            <td>Skill</td>
+            <td>Skill: </td>
             <td th:text ="${job.getCoreCompetency()}"/>
         </table>
     </block>
-
-
 </div>
 
 </body>
